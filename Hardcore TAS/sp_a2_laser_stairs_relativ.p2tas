@@ -5,7 +5,6 @@ start map sp_a2_laser_stairs
  Windows
 */
 
-
 // exit elevator room 179 -> 0
 0>0 0|0 0|jduzbo|| autoaim off; absmov off; autojump off; decel off; strafe off;
 +34>|||| absmov 179.9; // start +10
