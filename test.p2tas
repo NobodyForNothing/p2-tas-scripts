@@ -1,0 +1,7 @@
+version 2
+start now
+
+0>|||| absmov -90;
++7>|||| absmov off; strafe -105deg;
+
+100> 
