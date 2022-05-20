@@ -1,0 +1,78 @@
+version 2
+start map sp_a2_laser_stairs
+/*
+ Consistency 70%
+ Windows
+*/
+
+
+// exit elevator room 179 -> 0
+0>0 0|0 0|jduzbo|| autoaim off; absmov off; autojump off; decel off; strafe off;
++34>|||| absmov 179.9; // start +10
++182>|||| absmov 0;
++7>|||| absmov off; strafe 0deg;
++10>|||| autojump on;
++97>||||  decel 260;
+
+// get laser cube
++10>|||| decel off; setang 41 82 100;
++110>||B1|| autojump off; strafe off; setang 41 82;
++1>|||| setang 6 109 10;
++12>||O1|| absmov 111;
++45>|||| setang 12 130 50; 
++10>|||| absmov off;
++58>||B1 // make cube stay on floor
+
+/*
+ position cube for laser to go through wall
+ (magic)
+*/
+// cube positioning
++1>||U1|| setang 22 -161; absmov -161;
++7>|||| setang 0 -175 5; absmov off; 
+// cube to recepticle
++20>|||| setang 15 -170 5
++10>|||| absmov -167; setang 10 -167 5;
++5>||U1|| absmov off;
+
+
+// go upstairs
++1>|||| absmov 45;
++7>|||| absmov off; strafe 45deg; setang 0 45 30;
++10>|||| autojump on
++100>|||| autojump off; strafe off; // stairs
++10>|||| decel 0;
++145>||J1|| decel off; absmov 90; // inconsistend but faster
++54>|||| absmov off; strafe 90deg; autojump on; setang 32 2 30;
+
+// get cube back
++30>||B1|| setang 32 2; autojump off; 
++1>|||| setang 14.45 -130.1 10; strafe off; absmov -129;
++10>||J1|| absmov off;
++2>||O1|| setang 14.6 -129.7; 
++1>|||| absmov -30; setang 20 15 15; // pickup cube through portal
++7>|||| absmov off; strafe 2deg;
++9>|||| strafe off; setang 42 12 2
++10>||U1||
+
+// put cube on button
++1>|||| absmov 130; setang 40 -44 6;
++20>|||| absmov -45;
++6>|||| setang 10 -45 5;
++5>||U1|| absmov 105;
+
+
+// exit
++46>|||| absmov 90;
++5>|||| absmov off; strafe 90deg;
++10>|||| autojump on; setang 0 90 20;
++71>|||| strafe off; decel 0; autojump off;
+
++300>|||| decel off; absmov 90; // dialoge clue: "says: A [horrible]"
+/*
+ this dialoge time save is inconsistent 
+ due to the cube not hitting the butten 
+ always at the same time. 
+ The expected end time is: 1769 ticks
+*/
++288>||||

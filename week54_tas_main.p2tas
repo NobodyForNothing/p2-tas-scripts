@@ -1,0 +1,135 @@
+
+start map gb_theopeninghour
+
+// exit start room
+290>|||| strafe 9deg; autojump on; setang 11 15 60;
+370>|||| autojump off; decel 0; 
+383>||U1|| setang 5.5 -72 10; strafe off;
++5>||J1|| 
++5>||O1|| // -1079.15 1377 51.77 | 6 -72
++1>||||setang 50 116 10;
++5>0 1|||| 
++25>0 0||B1||decel off; strafe 110deg;
+
+// door navigation
+450>|||| strafe off;
++4>|||| setang 9.7 -114 70; decel 0;
+530>-1 -1||B1
+
+545>0 0|||| setang 9 -73 10;
+625>1 0.7||O1|| decel off;
+
+//touret redemtion
+650>0 0|||| strafe -133deg; autojump on;
++40>|||| strafe -165deg; setang 13 -174 45;
++50>||O1|| strafe -40deg; autojump off;
++5>|||| setang -9.13 -137.43 40;
+
+790>||B1|| strafe 140deg; 
++1>|||| setang 0 166 40;
+848>||J1|| strafe 130deg;
++5>0 1|||| strafe off
+
++18>0 0|||| strafe -83deg; autojump on; setang 20 -87 20;
++92>|||| decel 0; strafe off; autojump off; setang 0 -40 60;
++50>|||| strafe 0deg; 
+1034>|||| autojump on;
+
+1080>|||| strafe -90deg; setang 0 0 40;
++40>|||| strafe 0deg;
++60>|||| strafe -80deg; setang 0 -115 30; autojump off;
++20>|||| strafe -100deg;
++40>|||| autojump on; setang 10 -172 16;
+
+// floor to testchamber
+1256>||O1|| 
++1>|||| setang 30 -90 10;
++13>||B1|| autojump off;
++5>|||| decel 10; strafe off; setang 9 -67 10;
+
++10>-1 -0.2
++5>0 0
+
+1355>1 -0.2||B1
++20>-0.2 0.8|||| setang -9.24 -162.32 40;
++10>-0.5 0
+
++110>||O1
++5>0 -1|||| absmov 17,68; setang 48 -62 20;
+
+1522>||B1|| 
++1>|||| absmov -179deg
+
+1580>|||| strafe 173deg; setang 2 171 10;
++12>||O1|| autojump on; strafe -160deg; 
++1>|||| setang 14 -13 10;
++15>||B1|| 
++1>|||| setang 0 -159 20;
+
+1637>||U1|| autojump off; strafe 0deg; // chamber 3 activation
++5>||U1|| setang 22.08 -20;
++1>|||| setang 13 103 10; strafe 75deg;
+
+// elevator skip
+1683>|||| autojump off; decel off; absmov off; strafe -105deg 50ups; setang 5 -110 120; // door
++140>|||| strafe 150ups -104deg; setang 30 -110 30;
++30>|||| setang 35 -135 20;
++40>||U1|| autojump on; 
++5>|||| strafe off; absmov -89;
+
+1983>|||| decel off; absmov off; strafe -80deg; setang 50 -80 40;
+
+2050>|||| setang 0 157 80;
++80>|||| strafe 168deg 290ups; autojump off;
++50>|||| autojump on;
++30>|||| strafe 130deg; setang 0 90 60;
+
+2272>|||| autojump off; strafe 89deg; setang 6 164 25;
+
+// test chamber 3
+2300>0 0|||| strafe 93deg; autojump on; 
++11>||B1|| 
++1>|||| setang -50 178 30
++60>||O1|| strafe 105deg; //portal 1
++1>|||| setang 60 100 20; strafe off; 
++40>||U1|| autojump off; //cube button
+
++1>|||| strafe 105deg; setang -50 50 40;
++35>|||| strafe off; 
++20>||U1 // Cube pickup
+
++20>|||| setang 0 -135 70; strafe -135deg 290ups; autojump on;
++140>|||| strafe -164deg; setang 14 159 100;
+
+2645>|||| setang 43 120.5 50; strafe 140deg; autojump off;
++54>|||| strafe off; setang 64 122.5 10;
+
+// elevator
++180>|||| absmov -138;
++9>|||| autojump on; absmov off; strafe -135deg; setang 0 179 10;
+
+2925>|||| autojump off; strafe off; decel 0;
++50>|||| decel off; strafe 179deg;
++10>||U1|| strafe off;
++20>|||| strafe 179deg; autojump on;
+
+// exit
+3082>|||| autojump off; strafe -165deg 100ups;
++50>|||| autojump on; strafe -141deg; setang 0 -90 70;
+
+3228>|||| strafe -90deg;
++100>|||| strafe off; autojump off;
+3471>|||| strafe -90deg;
+
++100>
+
+/*
+1860>||U1|| autojump on;
+
+1940>|||| strafe -87deg;
+2080>|||| strafe -40deg; setang 0 179 50; autojump off;
++10>|||| strafe 179deg;
+
+// test chamber
+2185>|||| strafe 113deg; 
++1>|||| autojump on;*/

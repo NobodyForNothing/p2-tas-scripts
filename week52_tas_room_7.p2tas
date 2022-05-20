@@ -1,0 +1,28 @@
+start save week52_tas_room_7
+
+
+0>|||| autojump on; decel 200;
++80>|||| decel off; strafe 175deg; autojump off;
++30>|||| strafe 0deg; setang 89 7;
++80>|||| setang 0 -90; strafe -90deg
++40>|||| strafe -105deg; autojump on;
+
++70>||O1|| setang 1.25 -101.06;
++15>||B1|| setang 1 -97.5;
+
++10>||U1|| setang 40 -29 5;
++5>|||| setang 0 -90 30;
++100>|||| strafe off; autojump off;
+
++55>|||| decel 0;
++5>|||| setang 0 177 10
++10>||U1|| decel off; strafe -50deg; setang 0 -50 30; autojump on; // 144 1872.2 384.0
+
++117>|||| strafe -90deg; setang 0 -90;
+
++10>|||| autojump off; strafe off; decel off;
++40>|||| strafe -98deg; autojump on;
++122>|||| strafe 0deg;
++99>|||| strafe off; autojump off;
++30>-0.1 1
++100>

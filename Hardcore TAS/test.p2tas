@@ -1,0 +1,10 @@
+version 2
+start save test
+
+0>|||| absmov 120;
++7>|||| absmov off; strafe 133deg; setang 0 -179
++20>|||| autojump on
+
+61>|||| strafe -170deg;
+
++200>

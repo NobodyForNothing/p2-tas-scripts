@@ -1,0 +1,34 @@
+version 2
+
+start map workshop\1806517710635931644\sp_a1_interaction_with_momentum
+
+0>|||record weektourn/week59_tas_main_p1_dem| absmov 90
++194>|||| absmov -90; 
++7>|||| strafe -90deg; absmov off;
+// 200>|||| // can exit elevator
++10>|||| autojump on;
+
++55>|||| strafe off; autojump off; decel 0;
+
++30>|||| decel off; absmov -90;
++7>|||| strafe -90deg; absmov off;
++9>|||| autojump on;
+
+380>|||| autojump off;
+400>|||| strafe -105deg 250ups;  decel 250;
+
++40>|||| decel off; autojump on;
++37>|||| strafe 160deg 290ups; setang 0 177 50
+
+550>|||| strafe 90deg; autojump off; setang -20 -105 10;
+587>|||| setang -84 -90 5; strafe off;
+594>||B1|| setang -85 -90;
+
++1>|||| absmov -82; 
++7>|||| absmov off; strafe -80deg; setang 3 -80 10; 
++10>||O1|| autojump on
++1>|||| setang 0 0 50;
+
+695>|||stop; save tastempx|// continue in file ''week59_tas_main_part2.p2tas' strafe 90deg;
+
++100>

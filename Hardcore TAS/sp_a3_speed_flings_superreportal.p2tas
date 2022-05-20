@@ -1,0 +1,17 @@
+version 2
+start save hc_prop_flings_sr_test
+
+10>||B1|| setang -18 -54
+
++12>||O1|| setang 2.5 -162
+repeat 8
+    +12>||O1
+end
+
++12>||B1|| setang 10 -5; strafe 179.7deg
++1>|||| setang 10 155
+
+220>|||| strafe off; decel 0
++10>|||| absmov -90; decel off;
+
++20>

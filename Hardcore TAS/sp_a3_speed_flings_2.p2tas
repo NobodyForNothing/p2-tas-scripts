@@ -1,0 +1,20 @@
+version 2
+start map sp_a3_speed_flings
+
+// elevator exit and catwalk skip
+0>0 0|0 0|jduzbo| absmov off; strafe off; decel off; autoaim off; autojump off;
+100>|||| absmov -90;
++160>|||| absmov 90;
++7>|||| absmov off; strafe 90deg;
++10>|||| autojump on;
+
++25>|||| strafe off; decel 280; 
++53>|||| strafe 30deg; autojump off; decel off;
+
+373>|||| autojump on;
+422>|||| setang 5 20 20;
+
+
+// goto reportal position
+
++100>

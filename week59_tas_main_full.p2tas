@@ -1,0 +1,125 @@
+version 2
+
+start map workshop\1806517710635931644\sp_a1_interaction_with_momentum
+
+0>|||| absmov 90
++194>|||| absmov -90; 
++7>|||| strafe -90deg; absmov off;
+// 200>|||| // can exit elevator
++10>|||| autojump on;
+
++55>|||| strafe off; autojump off; decel 0;
+
++30>|||| decel off; absmov -90;
++7>|||| strafe -90deg; absmov off;
++9>|||| autojump on;
+
+380>|||| autojump off;
+400>|||| strafe -105deg 250ups;  decel 250;
+
++40>|||| decel off; autojump on;
++37>|||| strafe 160deg 290ups; setang 0 177 50
+
+550>|||| strafe 90deg; autojump off; setang -20 -105 10;
+587>|||| setang -84 -90 5; strafe off;
+594>||B1|| setang -85 -90;
+
++1>|||| absmov -82; 
++7>|||| absmov off; strafe -80deg; setang 3 -80 10; 
++10>||O1|| autojump on
++1>|||| setang 0 0 50;
+
+695>0 0|||| strafe 90deg; autojump off; // after cube rng 1
++1>|||| setang 0 90;
++1>|||| setang 30 110 60;
+
++67>||U1|| strafe off; decel 0;
++5>|||| setang 0 -179 50; absmov -179; decel off;
++7>|||| absmov off; strafe -175deg;
++2>|||| autojump on
+
++136>|||| strafe -155deg; autojump off;
++3>|||| autojump on
++60>|||| setang 30 -25 20;
++20>|||| setang -40 -165 5;
++5>||U1
++1>|||| setang 0 115 40;
+
++32>|||| autojump off; absmov 115;
++7>|||| strafe 116deg 270ups; absmov off;
++5>|||| autojump on;
++150>|||| strafe off; autojump off; absmov 100; setang 10 160 40
++40>||O1|| absmov off;
++1>|||| setang 2 58 30
++31>||B1|| absmov 179
++1>|||| setang -31.5 135 10;
++12>||O1|| absmov 0
+
++25>|||| setang 9 83 50; absmov -90; autojump on;
++62>||U1
++1>|||| setang 0 -60 20;
++10>|||| absmov off; strafe -90deg
+
++20>|||| autojump off; strafe -7deg //absmov -7; strafe off;
++20>||J1|| setang 33 7 20;
++10>|||| strafe off; decel 0;
+
++50>||B1
++1>|||| setang 89 0 20;
++20>||O1
+
++40>|||| strafe 1deg; decel off; autojump off; setang 20 85 70;
++55>|||| decel 0; strafe off;
++5>|||| decel off; strafe 91deg
+
++18>|||| strafe off; absmov 91; setang 46 87 10
++9>||U1|| absmov off;
+
++5>|||| absmov -100
+
++25>|||| absmov -179.59; setang 34 -139 10
++12>||O1
++15>|||| absmov off; decel 0; setang 89 -90 40;
+
++20>|||| absmov -90; decel off;
++25>||B1|| 
+
++28>|||| absmov off; setang 20 140 20; strafe 90deg;
++30>|||| strafe off; setang 25 -120 20
++10>|||| decel 0
++30>||O1||
++1>||||setang 20 120 10
+
++10>||U1|| decel off; absmov -140; setang 20 -120 40
++7>|||| absmov off; strafe -120deg;
++10>|||| autojump on
++10>|||| autojump off
+
++50>|||| setang 30 -90; strafe off; absmov -90
+
+
++10>|||| setang 30 90 2; decel 0; strafe off; //after cube rng 2
++5>||U1
++1>|||| setang 0 90 15
++35>||O1
+
++23>|||| decel off; absmov 0; setang 0 0 20
++28>
++7>|||| absmov off; strafe 0deg;
+
++20>|||| strafe off; absmov -179.9
+
++25>|||| absmov 0;
++7>|||| absmov off; strafe 0deg
++5>|||| autojump on
+
++60>|||| autojump off; strafe off; absmov 179.9
+
++74>|||| absmov 0
++7>|||| absmov off; strafe 0.5deg;
++55>|||| autojump on
+
++30>|||| autojump off;
++50>|||| strafe off; setang 0 179.999 10
+
++100>||||

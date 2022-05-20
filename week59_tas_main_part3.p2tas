@@ -1,0 +1,29 @@
+version 2
+
+start save tastemp2
+
+0>|||record weektourn/week59_tas_main_p3_dem| setang 30 90 2; decel 0; strafe off; 
++5>||U1
++1>|||| setang 0 90 15
++35>||O1
+
++23>|||| decel off; absmov 0; setang 0 0 20
++28>
++7>|||| absmov off; strafe 0deg;
+
++20>|||| strafe off; absmov -179.9
+
++25>|||| absmov 0;
++7>|||| absmov off; strafe 0deg
++5>|||| autojump on
+
++60>|||| autojump off; strafe off; absmov 179.9
+
++74>|||| absmov 0
++7>|||| absmov off; strafe 0.5deg;
++55>|||| autojump on
+
++30>|||| autojump off;
++50>|||| strafe off; setang 0 179.999 10
+
++150>|||stop|

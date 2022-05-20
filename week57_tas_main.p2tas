@@ -1,0 +1,116 @@
+version 2
+start map workshop\1806516206888759341\actinium_02
+
+130>||||strafe -8deg 280ups; autojump on; setang 0 -36 70;
+216>|||| strafe -50deg 290ups; setang 0 -36 100;
+
+300>|||| strafe off; autojump off;
++10>|||| strafe 100deg; setang 0 -90 50;
++62>|||| strafe off;
+
++10>|||| absmov -90;
++10>|||| strafe -87deg 290ups; autojump on; absmov off;
+
+467>|||| strafe -80deg 295ups;
+520>|||| strafe -92deg;
++10>|||| autojump off;
+626>|||| strafe -83deg; 
++20>|||| autojump on; strafe -90deg 290ups;
+
+//chamber 1
+670>|||| strafe 20deg 290ups; setang 40 0 100;
++100>|||| setang 25 90 20; strafe 60deg; autojump off;
+800>||U1|| strafe 3deg 290ups; setang 0 3 50;
++5>|||| autojump on;
+
+860>|||| strafe off; autojump off; decel 0; setang 0 160 90;
++10>|||| decel off; strafe 130deg 290ups; 
++10>|||| autojump on
++25>|||| autojump off; decel 0; strafe off;
++5>|||| absmov -120; decel off; setang 5 -123 30;
+
+940>||O1|| absmov off; decel 0;
++5>|||| absmov 0;
++10>|||| absmov off; decel off; strafe -80deg; autojump on; setang 20 -50 100;
+
+1000>|||| strafe -60deg;
++30>||B1
++20>|||| strafe -70deg; autojump off; setang 20 -112 30;
++30>||U1||
++5>|||| absmov -117; setang 0 -117 30; strafe off;
++30>|||| strafe 20deg;  setang 80 -15 50;
++35>|||| autojump on;
+1155>||U1|| 
+
++5>|||| strafe 12deg 280ups; 
+
+//chamber 2
+1250>|||| strafe -30deg 290ups; setang 0 -90 100; absmov off; 
++30>|||| strafe -100deg;
++100>|||| strafe -80deg;
++60>|||| decel 280;
++20>|||| strafe -40deg;  decel off; setang -64 -19 30;
+
++42>||O1||setang -64 -19;
++10>|||| strafe -60deg; setang 0 -30 40;
+
++70>|||| strafe off; autojump off; absmov -25;
++10>||B1
+
+
++12>|||| absmov off; // enter funnel
++5>|||| setang 48 -175 12;
++12>||O1
++1>|||| setang 70 -90 10; absmov -90;
++70>|||| absmov off; absmov -179;
+
++30>|||| absmov 120;
++1>||J1|| setang 7 -50 30;
+
+1750>||O1|| 
++10>|||| strafe -62deg; // setpos_exact 2479.5 -2535.2 301
++15>|||| strafe off; absmov 0; setang 0 0 40;
+
++90>|||| absmov off; strafe 10deg; autojump on
++5>||B1
+
+// chamber 3
+1890>|||| autojump off; strafe off; decel 0; setang -89 0 20;
++20>||B1
++1>|||| setang 20 -101 20;
+
+//fall
++40>||B1
++1>|||| setang 89 -100 20;
++20>||O1
+
+2040>|||| strafe 0deg; decel off;// 
++20>||||setang -31 -171 4
++4>||B1|| autojump on;
++10>|||| setang 0 90 50
++50>|||| strafe 30deg; setang 20 173 20; autojump off;
++50>|||| strafe 179deg; 
+
+2206>||O1
++20>|||| strafe off; setang 89 0 30; absmov 0;
++20>|||| decel 0; absmov off;
++20>||B1
+
+//fling
++40>|||| decel off; strafe -90deg;
+2344>|||| strafe off; absmov -90;
++19>|||| strafe -90deg
+2400>|||| absmov -179; strafe off;
++27>|||| absmov off;
++80>||||absmov 0;
++7>|||| strafe 20deg;
++10>|||| autojump on;
+
+
++200>
+
+
+
+
+/*
+

@@ -1,0 +1,52 @@
+version 2
+/*
+map sp_a1_intro2
+as tas script would end at tick 1 I did:
+sar_pause_at 10; save sp_a1_intro2_tas_start
+
+*/
+start save sp_a1_intro2_tas_start
+
+// exit elevator
+0>|||| absmov -179.99
++178>|||| absmov 0;
++7>|||| absmov off; strafe 0deg;
++12>|||| autojump on
+
+// enter chamber
++103>|||| decel 0; strafe off; autojump off;
++5>|||| absmov -179.99; decel off;
++16>|||| decel off; absmov 0
++7>|||| absmov off; strafe 10deg;
+
+// strafe to  jump
++20>|||| strafe 20deg ; setang 0 89 10;
++5>|||| strafe 60deg 280ups
++15>|||| autojump on
+
+// jump to button-high-on-wall
++43>|||| strafe 0deg; 
+450>|||| strafe off; 
++4>||U1|| setang -44.9 2
+
+
+// to orange portal
++5>|||| decel 0; autojump off;
++20>|||| decel off; absmov -121; setang 0 -121 20
++7>|||| absmov off; strafe -121deg;
++10>|||| autojump on;
+
+// grab ball
+540>|||| autojump off; setang 40 -163 20;
++19>||U1|| strafe off; absmov 70; setang 30 -14 10;
+
+// go to throw
++25>|||| absmov off; strafe 105deg;
++10>|||| autojump on; setang 20 -25 5
+
+// throw
+635>|||| strafe off; setang -81 155 5
++5>||U1
+
+
++100>

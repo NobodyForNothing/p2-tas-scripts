@@ -1,0 +1,181 @@
+
+start map week52
+
+//0>|||record week52_tas_1
+
+// elevator
+200>|||| absmov 90 
++5>|||| absmov off; strafe forward
++20>|||| autojump on
+
+//first door
+347>|||| autojump off; 
+370>|||| autojump on; strafe 210ups forward;
+
+//2nd door
+461>|||| decel 60; autojump off;
++6>|||| decel off; strafe forward;
+
+485>|||| strafe 99deg; autojump on; setang 0 99
+
+//portal 1
+508>||O5|| setang -10.90 -176.50;
+
+// portal 2
+600>||B5|| setang -75.60 110
++2>|||| setang 0 99
+
+
+// room 2
+610>|||| strafe 30deg
++30>||O5|| setang 22 150; 
++5>|||| setang 6 21; autojump off;
++15>||B5|| setang 43 18;
+
+// reportals
+689>||B5|| setang 0 73; strafe off;
++15>||B5|| setang 26 0;
+
+791>||O5|| setang 0 110;
++75>|||| setang 57 -175;
++4>||O5
+
+980>||B2|| setang 59.11 50.74;
+1071>||O2|| setang 1 105;
+
++1>|||| setang -6 100; strafe 90deg;
+
+
+// room 3
+1145>||B1|| decel 30; strafe 50deg; setang 12.5 102.5;
++15>||O1|| decel off; setang 9 13;
+
+1167>||U1|| setang 28 -5; strafe 7deg;
+1173>|||| autojump on; 
+
+1220>|||| autojump off; setang 0 -20; strafe off; strafe 179deg
++40>||U1
++3>|||| setang 0 170; strafe 163deg
+1280>|||| autojump on;
+// cube placed
+
+// end room
+1324>|||| autojump off; strafe off;
++2>||O2|| setang 7 82; strafe 78deg;
++19>||B1|| setang -34 154;
++1>|||| strafe -25deg; setang 0 -20;
+
+
+1404>||U1|| setang 8 27; strafe off; decel 0; autojump off;
+1550>||U1|| setang 33 67; decel off;
++1>|||| setang 0 150; strafe 300ups 160deg;
++20>|||| autojump on;
++75>|||| strafe 300ups 110deg;
++10>|||| autojump off; strafe 90deg;
++20>|||| setang 9 2; decel 0; autojump off; strafe off;
++30>||U1|| 
+
++50>|||| strafe 56deg; setang 3 56;
++10>|||| autojump on;
+
+
+// room 4
+1811>||B1||setang 28 41;
++15>||O1|| setang 3 133
+
++20>|||| setang 17 90; strafe 90deg;
++20>||O1|| autojump off;
+
+1907>||B1|| setang -47 -87;
++15>|||| setang 10 -172; strafe 50ups -50deg;
++40>||||  strafe -170deg;
+
+2012>|||| autojump on; strafe off; decel off;
+2082>|||| strafe -170deg; setang 0 170;
+
+
+// room 5
+2156>|||| setang 0 -140; strafe -100deg
++30>|||| setang 0 -100;
+
+2240>|||| setang 0 -146; strafe -146deg;
++30>|||| setang 0 -179; strafe -179deg; autojump off;
+
+2315>||U1|| setang 19 177; strafe 0deg; decel 0; // grab
++10>|||| setang 26 -106
++20>|||| setang 62 -89;
++10>|||| decel off;
+
+2375>|||| setang 0 -74; strafe -74deg; 
++5>|||| autojump on;
++50>|||| setang 10 90 30; 
++30>|||| strafe -75deg; setang 10 60 15;
+
+2485>||U1|| strafe -170deg; setang 13 149 30; autojump off; //ungrab
+
+2600>|||| strafe 50deg; autojump off; setang -11 -107;
++10>||U1|| setang 7 -179; // button 
+
++40>|||| strafe -80deg;
+2700>|||| strafe -155deg; setang 0 -169 10; autojump on;
++50>||U1|| setang 35 -117; strafe 79deg; autojump off;
++10>|||| setang 0 82 60;
+
+2952>||U1|| strafe 120deg;
+
+
+//room 6
+3000>|||| autojump on;
++40>|||| strafe 179deg; autojump off;
++20>||B1|| setang 0 175; // Portal 1
++30>|||| strafe off;
++15>||U1|| setang 0 179.9 5; strafe off; //cube align
++30>||U1|| strafe 34deg; autojump on;
+
++80>||O1|| setang -11 170; strafe 90deg;
++35>|||| setang 0 0; strafe 0deg; autojump off;
++25>|||| autojump on;
+
+3350>||U1|| setang 30 -32; strafe off; autojump off;
++1>|||| setang -73 -127 40;
+
+3450>||U1|| strafe -169deg; setang 0 -179 40;
++30>|||| strafe -179deg; autojump on;
+
+3608>||U1|| strafe -159deg; setang 0 -159 50;
+
+
+//room 7
+3750>|||| strafe off; autojump on; decel 200; //save week52_tas_room_7
++80>|||| decel off; strafe 175deg; autojump off;
++30>|||| strafe 0deg; setang 89 7;
++80>|||| setang 0 -90; strafe -90deg
++40>|||| strafe -105deg; autojump on;
+
++70>||O1|| setang 1.25 -101.06;
++15>||B1|| setang 1 -97.5;
+
++10>||U1|| setang 40 -29 5;
++5>|||| setang 0 -90 30;
++100>|||| strafe off; autojump off;
+
++55>|||| decel 0;
++5>|||| setang 4 172 25
++10>||U1|| decel off; strafe -50deg; setang -10 -50 30; autojump on; 
+
++117>|||| strafe -90deg; setang 0 -90;
+
+//elevator
++40>|||| strafe -98deg; autojump on;
+4468>|||| strafe 0deg; autojump off;
++30>-0.1 1
+4530>|||| autojump on
+
+//end trigger
+4600>|||| strafe off; autojump off;
+
+
+
++150>||||
+
+

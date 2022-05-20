@@ -1,0 +1,14 @@
+version 2
+start map sp_a2_column_blocker
+
+// exit elevator
+10>|||| absmov -90
++182>|||| absmov 90;
++7>|||| absmov off; strafe 90deg;
++12>|||| autojump on
+
+// enter chamber
++103>|||| autojump off;
+
+
++100>

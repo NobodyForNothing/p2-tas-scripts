@@ -1,0 +1,120 @@
+version 2
+start map 1646730297
+
+188>|||| absmov 90;
++15>|||| strafe 90deg; autojump on; absmov off;
++50>|||| autojump off; strafe 90deg 250ups;
+
+345>|||| autojump on; strafe 75deg 270ups;
+
+400>|||| setang 15 -9 49;
++50>||B1|| strafe -60deg;  autojump off;
++1>|||| setang 0 -90 50;
+
+// on Catwalk
+506>|||| strafe -91.6deg 300ups; autojump on; setang -29 -94 100;
++50>|||| autojump off; 
+
+609>||U1|| strafe off; absmov 90; // Cube Button
++10>|||| absmov off; strafe 90deg; autojump on; setang 28 -47 80;
+
+// get cube 1
+710>||B1||
++1>|||| setang 10 90 20;
+
+744>||B1
++1>|||| setang 30 179.9 10;
++10>||U1|| setang 0 90 40;
+
+// activate button 1
+790>||U1
++10>|||| decel 100; strafe off; autojump off;
++10>||U1|| setang 13.85 -24.77 15;
++30>||B1||
+
++1>|||| setang 38 -93 4
++5>||U1|| absmov 90; setang 0 90 20
+
+866>|||| setang -55 65 12; absmov off; // cubethrow 1
++5>||J1|| 
++5>||U1|| decel off; absmov -100;
+
+// get cube 2
++10>|||| setang 24 -125 20
+933>||B1|| absmov 90;
++1>|||| setang 0 90 30;
++20>|||| strafe 90deg; absmov off; setang 19.1 59.4 20;
+
+979>||U1|| strafe off; absmov -90;
++10>|||| strafe -90deg; absmov off; setang 0 -90 10;
++20>|||| strafe off;
++10>||U1|| setang 8.67 -164.5 20; absmov -90;
++5>|||| absmov off
+
+// activate button 2
++30>||B1
++5>||U1|| setang 24 -87;
++15>|||| setang 0 39 15; absmov 90;
+
+1098>||J1|| absmov off; setang -89 115 15
++10>||U1
+
+
+//exit room 1
+1133>|||| strafe -149deg; setang 27 -128 50
+1170>||B1
+1188>1 0||B1|| setang 64.01 176.62; strafe off; 
+
++30>0 0|||| absmov off; strafe 20deg; setang 0 90 20;
++20>|||| strafe 77deg;
++10>|||| autojump on; setang -14 26 45;
+
+
+//room 2
+1293>||B1||
++1>|||| setang 60 90 20; strafe 140deg 100ups;
++2>|||| strafe off; autojump off; decel 0;
+
++40>|||| decel off; absmov 160;
+
+// button
+1433>|||| strafe 176deg; autojump on; setang -21 -122 20;
++20>||B1|| //  1953.6 1103.2 682.5
++10>|||| setang 43.14 -43.67 30
+
+
+//button
+1500>||U1|| strafe off; autojump off;  decel 250; // 1765.4 1131.1 684.9 
+
++10>|||| strafe -90deg; decel off; 
++2>|||| strafe off; setang 13 -141 50
+
+
+// strafe
+1577>|||| strafe 160deg;
+
+//rescue cube
+1615>|||| strafe 60deg; setang 14 -140 30; absmov 70;
+1630>|||| strafe off; autojump off; 
++15>|||| absmov off;
++10>||B1
+
+//leave room 2
++1>|||| setang 0 0 50; strafe -10deg 150ups;
++50>|||| strafe 0deg 110ups
+
++70>|||| strafe 0deg; autojump on;
++30>|||| autojump off; strafe 200ups
+
+// elevator
+1902>|||| strafe -90deg; autojump on;
++100>|||| strafe off; autojump off;
+
++100>|||| absmov -90;
++50>|||| setang 0 90 100; absmov off;
+
+//1660
++100>
+
+
+
