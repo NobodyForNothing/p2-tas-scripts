@@ -1,0 +1,8 @@
+version 2
+start map sp_a1_intro1
+
+// go to painting
+800>|||| absmov 64;
++50>|||| absmov 0;
++40>|||| absmov -77; setang 0 -90 30
++100>
