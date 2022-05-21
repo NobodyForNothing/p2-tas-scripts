@@ -2,7 +2,59 @@ version 2
 start map sp_a1_intro1
 
 // go to painting
-800>|||| absmov 64;
-+50>|||| absmov 0;
-+40>|||| absmov -77; setang 0 -90 30
+800>|||| absmov 64; setang 0 0 40
++40>|||| absmov 0; setang 0 -80 30
++40>|||| absmov -70; 
++30>|||| absmov off
+
+// do movement tasks 
+1200>|||| setang -89 -90 20;
++250>|||| setang 89 -90 20;
+2600>|||| setang 0 -90 10;
+
+// write final time by moving on floor
+
+
+// go to bed
+4000>|||| setang 28 164 30; strafe 170deg 100ups
++30>||U1||
+repeat 10
+    +5>||U1||
+end
+
+// go to door
+4700>|||| absmov 100; setang 0 179 100
++50>|||| absmov 179;
+
+// rotate to wheatly
+5100>|||| setang -7 -14 300; decel 0; absmov 175;
+
+// 'talk' with wheatly
+9227>||J1 // yes
+9627>||J1 // apple
+
+// enter room
+17532>|||| decel off; absmov 0;
++7>|||| absmov off; strafe -5deg;
++35>|||| autojump on
++30>|||| strafe 5deg
+
+// go to front of portal in preperation for ourunning turretwd
+17650>|||| strafe off; autojump off; 
++1900>|||| absmov -35;
+
+//go through portal
+19687>|||| absmov -31;
++7>|||| absmov off; strafe -40deg;
++10>||J1
+
+// fast to turret -495.9
++42>|||| strafe 127deg 290ups;
++15>|||| autojump on;
++40>|||| strafe 60deg;
++40>|||| strafe 0deg; autojump off;
++20>|||| autojump on
+
+
+
 +100>
