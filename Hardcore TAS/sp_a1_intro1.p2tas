@@ -2,7 +2,7 @@ version 2
 start map sp_a1_intro1
 
 // go to painting
-800>|||| absmov 64; setang 0 0 40
+800>|||god 1| absmov 64; setang 0 0 40
 +40>|||| absmov 0; setang 0 -80 30
 +40>|||| absmov -70; 
 +30>|||| absmov off
@@ -41,19 +41,27 @@ end
 
 // go to front of portal in preperation for ourunning turretwd
 17650>|||| strafe off; autojump off; 
-+1900>|||| absmov -35;
++2035>|||| absmov -50;
 
 //go through portal
-19687>|||| absmov -31;
++30>|||| absmov -46;
 +7>|||| absmov off; strafe -40deg;
-+10>||J1
++10>|||| autojump on
 
-// fast to turret -495.9
-+42>|||| strafe 127deg 290ups;
-+15>|||| autojump on;
-+40>|||| strafe 60deg;
-+40>|||| strafe 0deg; autojump off;
-+20>|||| autojump on
++31>|||| strafe 135deg; autojump off;
++60>|||| autojump off; strafe 70deg; setang 25 -25 30;
++10>|||| autojump on;
+
+// fast to turret
++43>|||| autojump off; strafe -15deg;
++13>|||| autojump on
+
+// pickup turret
++59>||U1|
++30>|||| autojump off;
+
+
+
 
 
 
