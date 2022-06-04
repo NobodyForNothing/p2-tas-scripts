@@ -39,26 +39,32 @@ end
 +35>|||| autojump on
 +30>|||| strafe 5deg
 
-// go to front of portal in preperation for ourunning turretwd
+// go to front of portal in preperation for outrunning turretwd
 17650>|||| strafe off; autojump off; 
-+2035>|||| absmov -50;
++1900>|||| absmov -50;
 
 //go through portal
 +30>|||| absmov -46;
-+7>|||| absmov off; strafe -40deg;
-+10>|||| autojump on
++7>|||| absmov off; strafe off;
+19745>|||| absmov -30 //enter hop section
 
-+31>|||| strafe 135deg; autojump off;
-+60>|||| autojump off; strafe 70deg; setang 25 -25 30;
+// to turret
++25>|||| absmov 135;
++7>|||| strafe 135deg; absmov off; autojump off; //entry  section
 +10>|||| autojump on;
-
-// fast to turret
-+43>|||| autojump off; strafe -15deg;
-+13>|||| autojump on
++30>|||| strafe 85deg 290ups; // corner 1
++45>|||| autojump off; absmov 30; setang 25 -25 30; strafe off; // corner 2
++7>|||| strafe 25deg; absmov off;
++7>|||| autojump on; 
++10>|||| strafe -10deg; // direct to turret
 
 // pickup turret
 +59>||U1|
-+30>|||| autojump off;
++25>|||| autojump off; strafe -30deg;
+
+// goto turret drooff position
+//+22>|||| strafe -78deg;
+//+100>||J1|
 
 
 
