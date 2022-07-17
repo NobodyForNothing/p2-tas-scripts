@@ -3,69 +3,113 @@ start map sp_a1_intro1
 
 // go to painting
 800>|||god 1| absmov 64; setang 0 0 40
-+40>|||| absmov 0; setang 0 -80 30
-+40>|||| absmov -70; 
-+30>|||| absmov off
++40>> absmov 0; setang 0 -80 30
++40>> absmov -70; 
++30>> absmov off
 
 // do movement tasks 
-1200>|||| setang -89 -90 20;
-+250>|||| setang 89 -90 20;
-2600>|||| setang 0 -90 10;
+1200>> setang -89 -90 20;
++250>> setang 89 -90 20;
+2600>> setang 0 -90 10;
 
 // write final time by moving on floor
 
 
 // go to bed
-4000>|||| setang 28 164 30; strafe 170deg 100ups
+4000>> setang 28 164 30; strafe 170deg 100ups
 +30>||U1||
 repeat 10
     +5>||U1||
 end
 
 // go to door
-4700>|||| absmov 100; setang 0 179 100
-+50>|||| absmov 179;
+4700>> absmov 100; setang 0 179 100
++50>> absmov 179;
 
 // rotate to wheatly
-5100>|||| setang -7 -14 300; decel 0; absmov 175;
+5100>> setang -7 -14 300; decel 0; absmov 175;
 
 // 'talk' with wheatly
 9227>||J1 // yes
 9627>||J1 // apple
 
+
 // enter room
-17532>|||| decel off; absmov 0;
-+7>|||| absmov off; strafe -5deg;
-+35>|||| autojump on
-+30>|||| strafe 5deg
+17532>> decel off; absmov 0;
++7>> absmov off; strafe -5deg;
++35>> autojump on
++30>> strafe 5deg
+
+/*
++50>> autojump off; strafe off; absmov 144;
+
+// hop past turret || modified  fulgame tas version
+19610>>autoaim off; setang 0 -36 70
++72>>absmov off
++3>>absmov -35deg
++7>>absmov off; strafe 299.999ups -45deg
++10>||D||autojump on
++10>>strafe 299.999ups 30deg
++29>>strafe 299.999ups 180deg
++1>>autoaim off; strafe 299ups 116deg
++2>>setang 0 90 20; strafe 299ups 116deg
++33>>strafe 299.999ups 120deg
++15>>strafe 0deg; 
++5>>strafe -5deg;
++15>>setang 0 -5 20; 
+*/
 
 // go to front of portal in preperation for outrunning turretwd
-17650>|||| strafe off; autojump off; 
-+1900>|||| absmov -50;
+17650>> strafe off; autojump off; 
++1850>> absmov -50;
 
 //go through portal
-+30>|||| absmov -46;
-+7>|||| absmov off; strafe off;
-19745>|||| absmov -30 //enter hop section
++30>> absmov -46;
++7>> absmov off; strafe off;
+19745>> absmov -30 //enter hop section
 
 // to turret
-+25>|||| absmov 135;
-+7>|||| strafe 135deg; absmov off; autojump off; //entry  section
-+10>|||| autojump on;
-+30>|||| strafe 85deg 290ups; // corner 1
-+45>|||| autojump off; absmov 30; setang 25 -25 30; strafe off; // corner 2
-+7>|||| strafe 25deg; absmov off;
-+7>|||| autojump on; 
-+10>|||| strafe -10deg; // direct to turret
++25>> absmov 135;
++7>> strafe 135deg; absmov off; autojump off; //entry  section
++10>> autojump on;
++30>> strafe 85deg 290ups; // corner 1
++45>> autojump off; absmov 30; setang 28 -20 30; strafe off; // corner 2
++7>> strafe 25deg; absmov off;
++7>> autojump on; 
++10>> strafe -5deg; // direct to turret
 
 // pickup turret
 +59>||U1|
-+25>|||| autojump off; strafe -30deg;
++25>> autojump off; strafe off; absmov -30
 
-// goto turret drooff position
-//+22>|||| strafe -78deg;
-//+100>||J1|
 
+/* Test chamber
+ * Strat:
+ * The TAS hits the Button uses the turret to jump over
+ * the bars. after picking up the cube he throws it over
+ * the fizzler to the button.
+*/
+
+// go to button
+20006>> strafe 5deg;
++13>|||save hc_tas_sp_a1_intro1_part1_end| autojump on; // pos: -813.1 4425.4 2673.3  speed: 258.99 direction: 0deg
+
+
+
+// from button to wall
++11>> setang 20 -90 10;
++10>> decel 0; strafe off; absmov off; autojump off; 
++15>> absmov off; strafe -82deg;
++18>||U1||
++1>> autojump on // climb up
+ 
+
+// aquire cube
++102>> autojump off; decel off; strafe off; setang 25 28 5;
++30>||U1|| absmov 130; 
++40>> setang 50 -150 5; absmov off;
++10>> setang -55 60 5;
++5>||U1
 
 
 

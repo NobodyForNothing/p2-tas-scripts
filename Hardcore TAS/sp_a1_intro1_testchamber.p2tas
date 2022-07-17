@@ -1,0 +1,30 @@
+version 2 
+start save hc_tas_sp_a1_intro1_part1_end
+
+// pos: -813.1 4425.4 2673.3  speed: 258.99 direction: 0deg
+0>> strafe 5deg; autojump on; // tick: 20019 
+// from button to wall
++11>> setang 20 -90 10;
++10>> decel 0; strafe off; absmov off; autojump off; 
++15>> absmov off; strafe -82deg;
++18>||U1||
++1>> autojump on // climb up
+ 
+
+// aquire cube
++80>||U1
++22>> autojump off; decel off; strafe off; setang 25 28 5;
++20>> absmov 140; 
++22>> setang 66 -90 20; absmov off;
++45>> absmov -107
++8>> absmov 80;
++1>> setang -81 96.5 6; 
++6>||J1
++4>||U1
+
+
+
+
+
+
+//+100>
