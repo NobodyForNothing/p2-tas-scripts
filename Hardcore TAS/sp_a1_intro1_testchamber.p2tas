@@ -13,18 +13,35 @@ start save hc_tas_sp_a1_intro1_part1_end
 
 // aquire cube
 +80>||U1
+
+// throw cube over fizzler
 +22>> autojump off; decel off; strafe off; setang 25 28 5;
 +20>> absmov 140; 
-+22>> setang 66 -90 20; absmov off;
++22>> setang 66 -91 20; absmov off;
 +45>> absmov -107
 +8>> absmov 80;
-+1>> setang -81 96.5 6; 
++1>> setang -81 96.94 6; 
 +6>||J1
 +4>||U1
 
+// to exit door
++2>> setang -20 80 20; absmov -105;
++90>> absmov -93; setang 0 -93 50;
+
+//exit room
++142>> strafe -90deg; absmov off;
++10>> autojump on;
+
+// elevator entry
++50>> autojump off; strafe off; setang 0 -90 10;
++99>> absmov 90
++15>> absmov -90;
++7>> absmov off; strafe -90deg;
++16>> autojump on
 
 
 
++80>> strafe off; autojump off;
 
 
-//+100>
++200>

@@ -92,24 +92,48 @@ end
 
 // go to button
 20006>> strafe 5deg;
-+13>|||save hc_tas_sp_a1_intro1_part1_end| autojump on; // pos: -813.1 4425.4 2673.3  speed: 258.99 direction: 0deg
-
++13>|||save hc_tas_sp_a1_intro1_part1_end| autojump on; absmov off; check pos -813.1 4425.4 2673.3 // pos: -813.1 4425.4 2673.3  speed: 258.99 direction: 0deg
 
 
 // from button to wall
 +11>> setang 20 -90 10;
 +10>> decel 0; strafe off; absmov off; autojump off; 
-+15>> absmov off; strafe -82deg;
++15>> absmov off; strafe -80deg;
 +18>||U1||
 +1>> autojump on // climb up
  
 
 // aquire cube
-+102>> autojump off; decel off; strafe off; setang 25 28 5;
-+30>||U1|| absmov 130; 
-+40>> setang 50 -150 5; absmov off;
-+10>> setang -55 60 5;
-+5>||U1
++80>||U1
+
+// throw cube over fizzler
++22>> autojump off; decel off; strafe off; setang 25 28 5;
++20>> absmov 140; 
++22>> setang 66 -89 20; absmov off;
++45>> absmov -107
++8>> absmov 80;
++1>> setang -81 104 6; 
++4>||J1
++4>||U1
+
+// to exit door
++2>> setang -20 80 20; absmov -105;
++90>> absmov -93; setang 0 -93 50;
+
+//exit room
++142>> strafe -90deg; absmov off;
++10>> autojump on;
+
+// elevator entry
++50>> autojump off; strafe off; setang 0 -90 10;
++99>> absmov 90
++15>> absmov -90;
++7>> absmov off; strafe -90deg;
++16>> autojump on
+
+
+
++80>> strafe off; autojump off;
 
 
 
