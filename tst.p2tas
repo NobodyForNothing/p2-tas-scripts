@@ -1,0 +1,9 @@
+version 2
+start save quick
+
+80>> absmov -179.999;
++7>> strafe -179.999deg; 
++10>> setang 70 -179.999; autojump on;
++32>||U1
+
+200>>

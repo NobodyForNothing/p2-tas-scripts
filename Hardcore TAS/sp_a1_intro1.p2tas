@@ -1,6 +1,8 @@
 version 2
 start map sp_a1_intro1
 
+// 90% consistent
+
 // go to painting
 800>|||god 1| absmov 64; setang 0 0 40
 +40>> absmov 0; setang 0 -80 30
@@ -106,22 +108,56 @@ end
 // aquire cube
 +80>||U1
 
+/* old version
 // throw cube over fizzler
 +22>> autojump off; decel off; strafe off; setang 25 28 5;
 +20>> absmov 140; 
-+22>> setang 66 -89 20; absmov off;
-+45>> absmov -107
++22>> setang 66.12 -89 20; absmov off;
++45>> absmov -107;
 +8>> absmov 80;
-+1>> setang -81 104 6; 
+// next setang: 
+// lower horiz. cube to right side of fizzler 
+// higher horiz. cube to middle of fizzler
++1>> setang -81.199 101.923 6; // throw direction
 +4>||J1
 +4>||U1
+*/
+
+/* Throws over fizzler
+// throw cube over fizzler v2
++22>> autojump off; decel off; strafe off; setang 25 28 5;
++23>> absmov 145; 
++20>> absmov off;
++50>> setang 77 -94 5;
+// next setang: 
+// lower horiz. cube to right side of fizzler 
+// higher horiz. cube to middle of fizzler
++6>> absmov -138
++8>> absmov 82;
++3>> setang -83 92.5 5; // throw direction
++2>||J1
++6>||U1
+*/
+
+// throw cube over fizzler v3
++22>> autojump off; decel off; strafe off; setang 25 28 5;
++23>> absmov 145; 
++18>> absmov off;
+// begin actual cube throw
++24>> setang 77 -94.05 5; //22 ticks adds inconsistancy (24 for testing)
++2>> absmov -138;
++10>> absmov 82;
++3>> setang -76.8 93.15 5; // throw direction
++3>||J1
++5>||U1
+
 
 // to exit door
-+2>> setang -20 80 20; absmov -105;
-+90>> absmov -93; setang 0 -93 50;
++2>>  strafe off; setang -20 80 20; absmov -105;
++56>> absmov off; setang 0 -90 50;
 
 //exit room
-+142>> strafe -90deg; absmov off;
++138>> strafe -90deg; absmov off;
 +10>> autojump on;
 
 // elevator entry
