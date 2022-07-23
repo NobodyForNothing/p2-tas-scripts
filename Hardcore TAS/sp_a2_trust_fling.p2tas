@@ -1,0 +1,115 @@
+version 2
+start map sp_a2_trust_fling
+
+//62% consistent
+
+// modified version of AMJ's fulgame tas
+// Trigger panels as fast as possible
+3>>absmov -90
++1>>setang 0 90
++191>>absmov 90
++7>>absmov off; strafe vec max 90deg
++11>||D||autojump on
+
+
+// Shoot blue
++196>>autojump off; strafe off; autoaim -1791 1322 -343 20
++16>||D||
++4>||dB1||absmov -91; decel 0
++1>>autoaim off; setang 0 90 30
++126>>absmov off; decel 0
++18>>absmov 90
++7>>absmov off; strafe vec 90deg
++10>||D||autojump on
++56>>strafe 96deg
++19>>autojump off
++2>||d||setang 0 135 14;strafe 155deg
++8>||J1D
+
++46>||d||strafe 143deg
+
+
+// Szei (a lot of these are taken directly from AMJ's script though)
+// Catapult Skip!
++8>||D||strafe veccam -174.3deg
++75>>autoaim -138.692 -703.969 310.742 12; strafe vec -173.65deg
++12>||O1|| strafe -90deg; autoaim off;
+
++12>||
++8>||d||setang -27.9 -142.6 6
++9>>strafe off;decel 0
++1>>decel off;absmov -90
+
+
+
+// thru portal
++9>> absmov off; setang -27.5 -143.5;
++1>||O1|| absmov 179
+
+// to button
++24>> absmov 40;
++6>> absmov off; strafe 38deg;
++10>> autojump on; setang 20 40 60;
+
+// press button
++86>||U1|| strafe off; autojump off; absmov -150;
+
+// aquire cube
++22>>
++7>> absmov off; strafe -140deg; autoaim 606.5 -944 90 40;
++10>> autojump on;
++30>||B1
++1>> autoaim off; setang 20 -137 30;
++30>||O1
+
+// thru portal
++32>>  strafe 70deg; autojump off;
++25>> strafe off; setang -20 -154.4 54;
+
+// portal to go back
++55>||B1
++1>> setang -15 110 15
++15>||O1
++5>> setang 0 70 80;
+
+// bounce to portal
++77>|||| absmov 63deg;
++17>> absmov off; strafe -80deg;
++5>||U1
+
+// bring ball to button
++52>> absmov -22deg; strafe off;
++20>> absmov -179deg;
++7>> absmov off; strafe 179.99deg; 
++12>> strafe 170deg; setang 0 -110 30; 
++50>> strafe 60deg; 
++32>> setang 10 40 7;
++7>||U1
+
+// to exit
++4>> strafe off; absmov -20deg;
++10>> absmov off; strafe -30deg;
++50>> autojump on; setang 0 90 70;
++54>>  autojump off; strafe 90deg; // after faith plate
++167>> decel 0;
++8>> decel off; absmov 70deg;
++7>> absmov off; strafe 66.2deg 290ups;
++10>> autojump on
++93>> strafe 90deg
+
+//elevator
+1923>> autojump off; strafe off; absmov -90deg;
+1995>> absmov off; strafe -90deg;
+2058>> strafe off; absmov 90deg;
++10>> strafe 90deg; absmov off;
++10>> autojump on
+
+2160>> autojump off; strafe off; setang 0 -90 30
++30>> setang 0 90 30;
++30>> setang 0 -90 20;
++20>> setang 0 90 20;
++20>> setang 0 -90 10;
++10>> setang 0 90 10;
++10>||D|| setang 89 90 60;
++60>>
+

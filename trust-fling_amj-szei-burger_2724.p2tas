@@ -1,0 +1,177 @@
+version 1
+start map sp_a2_trust_fling
+
+/*
+	Author - AMJ, Szeimartin
+	Time - 45.600 (2736)
+	Worktime - 5 hours (AMJ) + 5 hours (Szei)
+	Contributions - {
+		Blenderiste: Ball boost route
+		Szeimartin: Catapult Skip
+		Burger: Small optimizations
+	}
+
+	CM WR:
+	Trust Fling - Panels Trigger     - 7.367  (442) - 7.367
+	Trust Fling - Catapult Trigger   - 5.867  (352) - 13.233
+	Trust Fling - Button Press       - 9.433  (566) - 22.667
+	Trust Fling - Button Activation  - 10.766 (646) - 33.433
+
+//These are outdated.
+
+	Ours: 
+	Trust Fling - Panels Trigger - 6.817 (409) - 6.817
+	Trust Fling - Catapult Trigger - 5.533 (332) - 12.350
+	Trust Fling - Button Press - 3.867 (232) - 16.217
+	Trust Fling - Button Activation - 7.967 (478) - 24.183
+	Trust Fling - Elevator Trigger - 1.600 (96) - 25.783
+	Trust Fling - Elevator Entry - 3.700 (222) - 29.483
+	Trust Fling - Transition - 15.167 (910) - 44.650
+	Trust Fling - End - 0.950 (57) - 45.600
+*/
+
+// AMJ
+// Trigger panels as fast as possible
+3>|||sar_give_betsrighter; sar_trace_record 1|absmov -90
++1>||||setang 0 90
++191>||||absmov 90
++7>||||absmov off; strafe vec max 90deg
++11>||D||autojump on
+//old:6.817
+//old:12.350(5.533)
+//new:6.750
+//new:12.117 (5.367)
+
+// Shoot blue
++200>||||autojump off; strafe off; autoaim -1791 1322 -343 20
++16>||D||
++6>||dB1||absmov -91; decel 0
++1>||||autoaim off; setang 0 90 30
++120>||||absmov off; decel 0
++18>||||absmov 90
++7>||||absmov off; strafe vec 90deg
++10>||D||autojump on
++56>||||strafe 96deg
++19>||||autojump off
++2>||d||setang 0 135 14;strafe 155deg
++8>||J1D
+
++46>||d||strafe 143deg
+
+
+// Szei (a lot of these are taken directly from AMJ's script though)
+// Catapult Skip!
+// With a quite precise setup on the catapult, we can launch into the wall and portal straight to the button
++8>||D||strafe veccam -174.3deg
++75>||||autoaim -138.692 -703.969 310.742 12; strafe vec -173.65deg
++12>||O1||strafe -90deg; autoaim off
+
++12>||
++8>||d||setang -27.9 -142.6 6
++8>||||strafe off;decel 0
++1>||||decel off;absmov -90
+//851>||||strafe -90deg
+
+
+//thru portal:852
++9>||||absmov 90
++1>||||absmov 170
++1>||O1||absmov 170
++4>||||setang 24 -130 10;absmov 170
++11>||||strafe 150deg
++2>||B1||strafe 60deg
++7>||J1D||setang 0 60 10;strafe 60deg
++43>||||strafe veccam 7deg
++9>||J1D||setang 28.68 36.21 20;strafe 7deg
++26>||U1||autojump off
+
+
+// new: 956>||U1
+// old: 972>||U1
+//16.017
+
++16>||d||decel 0;absmov 180
++14>||||autoaim 609.697 -959.969 -1.375 16;strafe 180deg
++10>||J1||
++6>||B1
++1>||||autoaim off;setang 0 180 16;strafe 180deg
++42>||||setang 0 -108 20;strafe -108deg
++13>||||setang 12.9 -115.6 12;strafe 297ups -116deg;autojump on
+1070>||O1
+1117>||||strafe 299ups 71deg
+1178>||||autojump off
+1184>||||decel 0;strafe off;autojump off;absmov off
+1200>||||decel off;absmov 0 0.95506
+1226>||||decel 0;absmov off;setang 40 90 35
+1236>||||decel off;absmov 90 0.950219
+1250>||||decel 0;absmov off
+
+1279>||D||absmov 86
++9>||U1||absmov -90
++4>||d||absmov off; strafe off;setang -15 71.2 15
++26>||U1||
++18>||||strafe off; setang -19.5 27 10
+1348>||O1||strafe 83deg 430ups; autojump off
+1352>||J1||setang 8 1 20
+1396>||||strafe 380ups 84deg
+1398>||J1||
+1441>||||absmov 90;strafe off;decel off
+1470>||||setang 0 90 18;absmov 90
+1488>||||strafe 90deg
++10>||J1D
+
+
+1520>||||strafe off;absmov -90
+1543>||d||
+1594>||||absmov off
+1625>||||absmov 90
++7>||||strafe 90deg
++3>||J1||autojump on
+
+1761>||||autojump off;absmov off;strafe off;setang 0 -90 50
++230>||||setang 88 -90 30
++80>||||setang 0 10 40
++100>||||setang 0 -155 40
++100>||Z1
+repeat 7
+	+24>|0.5 0|Z1
+end
+
++100>||||setang 0 -90 40
+
+//2724 ticks total
+//thru portal:1351
+//vel: 462.11
+//795.959 -620.257
+
+//new button activation: 23.983 (7.967)
+//old: 24.183 (7.967)
+
+//end with double jump: 450vel, 21.417 end time
+
+
+//
+// 1594>||||absmov off
+// 1626>||||absmov 90
+// +7>||||strafe 90deg
+// +3>||J1||autojump on
+
+//
+// 1594>||||absmov off
+// 1624>||||absmov 90
+// +7>||||strafe 90deg
+// +39>||J1D||autojump on
+
+
+//23.983
+// 1279>||D||absmov 86
+// +9>||U1||absmov -90
+// +4>||d||absmov off; strafe off;setang -15 71.2 15
+// +26>||U1||
+// +18>||||strafe off; setang -19.5 27 10
+// 1348>||O1||strafe 83deg 430ups; autojump off
+// 1352>||J1||setang 8 1 10
+// 1396>||||strafe 380ups 84deg
+// 1398>||J1||
+
++3150>
